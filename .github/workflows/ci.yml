@@ -13,7 +13,7 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     env:
-      PORTFOLIO_ORIGIN: ${{ vars.PORTFOLIO_ORIGIN || 'https://website-examples-alpha.vercel.app' }}
+      PORTFOLIO_ORIGIN: ${{ vars.PORTFOLIO_ORIGIN || 'https://site-examples-ebon.vercel.app' }}
     steps:
       - uses: actions/checkout@v4
         with:

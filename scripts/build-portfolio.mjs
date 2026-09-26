@@ -19,7 +19,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 process.chdir(root);
 const catalog = JSON.parse(readFileSync("examples.json", "utf8"));
 const origin = (
-  process.env.PORTFOLIO_ORIGIN || "https://website-examples-alpha.vercel.app"
+  process.env.PORTFOLIO_ORIGIN || "https://site-examples-ebon.vercel.app"
 ).replace(/\/$/, "");
 if (!/^https:\/\/[^/]+$/.test(origin))
   throw new Error("PORTFOLIO_ORIGIN must be an HTTPS origin");

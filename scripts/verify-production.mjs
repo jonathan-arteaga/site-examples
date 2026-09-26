@@ -2,7 +2,7 @@ import { chromium } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import assert from "node:assert/strict";
 const origin =
-  process.env.PORTFOLIO_ORIGIN || "https://website-examples-alpha.vercel.app";
+  process.env.PORTFOLIO_ORIGIN || "https://site-examples-ebon.vercel.app";
 const catalog = JSON.parse(readFileSync("examples.json", "utf8"));
 const browser = await chromium.launch();
 try {

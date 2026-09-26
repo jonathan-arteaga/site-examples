@@ -4,10 +4,10 @@ The repository builds a Vercel Build Output API v3 artifact under `.vercel/outpu
 
 ## Build and release
 
-Run `pnpm verify` on the exact commit. Connect the `jonathan-arteaga/site-examples` repository to a Vercel project in Jonathan's personal team, using the root directory and the package build script. Vercel should consume the generated `.vercel/output` artifact. Confirm the project's production branch is `main` and read back the deployed SHA, routes, headers, image assets, and anonymous browser behavior before treating the new URL as live.
+Run `pnpm verify` on the exact commit. The `site-examples` Vercel project in Jonathan's personal team is connected to `jonathan-arteaga/site-examples`, uses the repository root, and runs `pnpm build` with the Other preset. Vercel consumes the generated `.vercel/output` artifact. Production tracks `main`. Read back each deployed SHA, routes, headers, image assets, and anonymous browser behavior before treating a new revision as live.
 
-`PORTFOLIO_ORIGIN` is the canonical HTTPS origin used by the gallery and demos. Set it to the verified production domain for builds and CI; do not carry over project IDs or tokens from the old repository. The GitHub workflow runs source and browser verification without a Vercel token. If Vercel uses a deployment check, point it at the new repository's passing `verify` job.
+`PORTFOLIO_ORIGIN` is the canonical HTTPS origin used by the gallery and demos. Its default is the verified [production domain](https://site-examples-ebon.vercel.app/). Set it explicitly for another environment; do not carry over project IDs or tokens from the old repository. The GitHub workflow runs source and browser verification without a Vercel token. If Vercel uses a deployment check, point it at the new repository's passing `verify` job.
 
-`pnpm smoke:production` checks the gallery and six demo routes on a live deployment. A ready build is only one part of cutover: verify the public URL and any controlled links before deleting the old Vercel project. The old generated preview URL may change.
+`pnpm smoke:production` checks the gallery and six demo routes on the live domain. A ready build is only one part of cutover: verify the public URL and any controlled links before deleting an old Vercel project.
 
 Practice Studio's standalone Sites worker is maintained separately from this gallery deployment. A new server-backed example requires its own architecture and hosting decision.

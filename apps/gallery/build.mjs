@@ -25,7 +25,7 @@ export function buildGallery() {
         })[c],
     );
   const origin =
-    process.env.PORTFOLIO_ORIGIN || "https://website-examples-alpha.vercel.app";
+    process.env.PORTFOLIO_ORIGIN || "https://site-examples-ebon.vercel.app";
   const cards = examples
     .map(
       (p) =>

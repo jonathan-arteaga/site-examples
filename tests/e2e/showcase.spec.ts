@@ -9,7 +9,7 @@ import {
 const DISCLOSURE =
   'Portfolio demonstration — all properties, pricing, availability, and contact details are fictional.';
 const LOCAL_PREFERENCE_KEY = 'portfolio-demo-notice-dismissed';
-const PUBLIC_ORIGIN = `${process.env.PORTFOLIO_ORIGIN || 'https://website-examples-alpha.vercel.app'}/examples/property-management`;
+const PUBLIC_ORIGIN = `${process.env.PORTFOLIO_ORIGIN || 'https://site-examples-ebon.vercel.app'}/examples/property-management`;
 const MOUNT = '/examples/property-management';
 const gatewayPort = Number(process.env.SHOWCASE_GATEWAY_PORT ?? '3000');
 

@@ -17,6 +17,8 @@ pnpm --filter practice-studio test:sites
 
 The root `pnpm build` also assembles this site under `/examples/practice-studio/` in the gallery. The standalone build retains a Sites-ready worker for a separate handoff. The root `pnpm verify` checks the combined static output and browser behavior.
 
+[Open the published demo](https://site-examples-ebon.vercel.app/examples/practice-studio/).
+
 ## Scope
 
 The dialog traps focus, closes with Escape, restores focus, and validates basic business contact fields. It explicitly excludes patient information. The site is a demonstration of a possible launch path, not a live practice or submission service.

@@ -1,6 +1,6 @@
 # site-examples
 
-A public collection of fictional website and interface prototypes. **Stage:** active static gallery with two concepts and six site experiences; the new Vercel project is being verified for this clean source. Each concept keeps its own visual identity and framework while one build publishes the gallery and demos.
+A public collection of fictional website and interface prototypes. **Stage:** published static gallery with two concepts and six site experiences. Each concept keeps its own visual identity and framework while one build publishes the gallery and demos.
 
 ![Site examples gallery](docs/images/portfolio.webp)
 
@@ -13,6 +13,8 @@ A public collection of fictional website and interface prototypes. **Stage:** ac
 - `examples.json` and `scripts/`: catalog, static assembly, media and privacy checks, and production smoke tests.
 
 The gallery is indexable; the demos are marked noindex. Names, properties, operating details, and sample interactions are fictional. Forms demonstrate a flow and do not send or retain information.
+
+[Open the live gallery](https://site-examples-ebon.vercel.app/). The concepts are under `/examples/property-management/` and `/examples/practice-studio/`.
 
 ## Run and check
 
