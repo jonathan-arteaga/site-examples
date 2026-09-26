@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="140" viewBox="0 0 600 140" role="img" aria-label="Alderwyck Apartments">
+  <g transform="translate(16 10)">
+      <path d="m18 100 40-82h6l40 82M36 68h49" fill="none" stroke="#176F70" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M66 52c16-19 31-16 38-24-1 20-12 34-38 30Z" fill="#D78B45"/>
+      <path d="M64 55c8-8 18-15 29-20" fill="none" stroke="#176F70" stroke-width="4" stroke-linecap="round"/></g>
+  <text x="150" y="67" fill="#164C4C" font-family="Georgia, 'Times New Roman', serif" font-size="39" font-weight="700" letter-spacing=".3">Alderwyck</text>
+  <text x="151" y="99" fill="#176F70" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="3.1">APARTMENT HOMES</text>
+</svg>

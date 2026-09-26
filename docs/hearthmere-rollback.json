@@ -1,0 +1,11 @@
+{
+  "id": "prj_1r1mfRORxy5ojTaeAIRZK43Pcusl",
+  "name": "hearthmere-residential",
+  "rootDirectory": "apps/hearthmere-residential",
+  "framework": "nextjs",
+  "buildCommand": null,
+  "outputDirectory": null,
+  "installCommand": null,
+  "nodeVersion": "22.x",
+  "previousProduction": "dpl_7qrLNfn8nLuqRdbSG5ijhRyY8YVH"
+}

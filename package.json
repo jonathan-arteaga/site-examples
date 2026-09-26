@@ -1,0 +1,40 @@
+{
+  "name": "site-examples",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {
+    "dev": "pnpm --filter gallery dev",
+    "dev:hearthmere-residential": "turbo run dev --filter=hearthmere-residential",
+    "build": "node scripts/build-portfolio.mjs",
+    "build:hearthmere-residential": "turbo run build --filter=hearthmere-residential",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "images:audit": "node scripts/images-audit.mjs",
+    "images:optimize": "node scripts/images-optimize.mjs",
+    "images:blur": "node scripts/images-blur.mjs",
+    "privacy:audit": "node scripts/privacy-gate.mjs --history",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "playwright test",
+    "verify": "pnpm lint && pnpm type-check && pnpm build && pnpm images:audit --strict && pnpm privacy:audit && pnpm test && pnpm --filter practice-studio test:sites && pnpm test:e2e",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "prepare": "husky",
+    "dev:practice-studio": "pnpm --filter practice-studio dev",
+    "build:apps": "turbo run build",
+    "preview": "node scripts/preview-portfolio.mjs",
+    "screenshots": "node scripts/capture-examples.mjs",
+    "smoke:production": "node scripts/verify-production.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "turbo": "^2.10.4",
+    "sharp": "0.35.4",
+    "parse5": "^7.3.0",
+    "vercel": "^54.0.0"
+  }
+}

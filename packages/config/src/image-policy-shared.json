@@ -1,0 +1,27 @@
+{
+  "photo": {
+    "maxLongEdge": 1920,
+    "quality": 75,
+    "maxBytes": 1433600
+  },
+  "floorPlan": {
+    "maxLongEdge": 1400,
+    "maxBytes": 2252800
+  },
+  "og": {
+    "path": "/images/og-image.jpg",
+    "width": 1200,
+    "height": 630,
+    "quality": 75,
+    "maxBytes": 256000
+  },
+  "unreferenced": {
+    "maxBytes": 307200
+  },
+  "nextImage": {
+    "formats": ["image/avif", "image/webp"],
+    "deviceSizes": [640, 750, 828, 1080, 1200, 1920],
+    "imageSizes": [16, 32, 48, 64, 96, 128, 256, 384],
+    "minimumCacheTTL": 2592000
+  }
+}

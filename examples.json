@@ -1,0 +1,30 @@
+[
+  {
+    "id": "property-management",
+    "title": "Property Management",
+    "description": "One residential brand. Four distinct communities. A connected collection of property websites, from first impressions to floor plans and local tour-request demos.",
+    "category": "Residential · Multi-site concept",
+    "thumbnail": "/screenshots/property-management.webp",
+    "workspace": "hearthmere-residential",
+    "output": "apps/hearthmere-residential/out",
+    "basePath": "/examples/property-management",
+    "links": [
+      { "label": "Hearthmere Residential", "path": "/" },
+      { "label": "Alderwyck", "path": "/alderwyck/" },
+      { "label": "Norvale", "path": "/norvale/" },
+      { "label": "Larkmere", "path": "/larkmere/" },
+      { "label": "Caldridge", "path": "/caldridge/" }
+    ]
+  },
+  {
+    "id": "practice-studio",
+    "title": "Practice Studio",
+    "description": "A considered starting point for an independent practice. Warm editorial design, a guided launch roadmap, and a local-only request flow.",
+    "category": "Professional services · Website concept",
+    "thumbnail": "/screenshots/practice-studio.webp",
+    "workspace": "practice-studio",
+    "output": "apps/practice-studio/dist/client",
+    "basePath": "/examples/practice-studio",
+    "links": [{ "label": "Practice Studio", "path": "/" }]
+  }
+]

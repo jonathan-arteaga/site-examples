@@ -1,0 +1,10 @@
+:root {
+  --paper: oklch(98% 0.004 90);
+  --ink: oklch(23% 0.008 75);
+  --muted: oklch(47% 0.009 75);
+  --rule: oklch(86% 0.01 75);
+  --surface: oklch(94% 0.008 75);
+  --accent: oklch(49% 0.09 40);
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-label: ui-monospace, SFMono-Regular, monospace;
+}

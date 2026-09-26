@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="140" viewBox="0 0 600 140" role="img" aria-label="Hearthmere Residential">
+  <g transform="translate(16 10)">
+      <path d="M18 55 60 18l42 37" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M29 50v48h62V50M48 98V67h24v31" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M60 39c9 10 11 17 7 24-3 6-11 7-16 2-7-8 1-18 9-26Z" fill="#83A08B"/></g>
+  <text x="150" y="67" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="39" font-weight="700" letter-spacing=".3">Hearthmere</text>
+  <text x="151" y="99" fill="#83A08B" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="3.1">MULTIFAMILY MANAGEMENT</text>
+</svg>

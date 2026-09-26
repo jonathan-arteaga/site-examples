@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 120 120" role="img" aria-label="Caldridge Townhomes brand mark">
+  <rect width="120" height="120" rx="24" fill="#FFFFFF"/>
+
+    <path d="M96 32c-9-10-21-15-36-15-27 0-46 19-46 43s19 43 46 43c15 0 27-5 36-15" fill="none" stroke="#403A37" stroke-width="11" stroke-linecap="round"/>
+    <path d="m34 49 26-22 26 22M45 45v33h30V45" fill="none" stroke="#C58A61" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

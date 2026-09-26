@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="280" viewBox="0 0 360 280" role="img" aria-label="Norvale Commons">
+  <g transform="translate(120 20)">
+      <rect x="15" y="15" width="90" height="90" rx="18" fill="none" stroke="#8B3F3F" stroke-width="8"/>
+      <path d="M34 88V32l52 56V32" fill="none" stroke="#8B3F3F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 101h56" stroke="#B88A67" stroke-width="7" stroke-linecap="round"/></g>
+  <text x="180" y="183" text-anchor="middle" fill="#3F3838" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Norvale</text>
+  <text x="180" y="218" text-anchor="middle" fill="#8B3F3F" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2.8">APARTMENT HOMES</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="280" viewBox="0 0 360 280" role="img" aria-label="Larkmere Gardens">
+  <g transform="translate(120 20)">
+      <path d="M30 20v74h65" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M48 67c5-29 24-41 49-43-3 28-18 47-49 43Z" fill="#B09A69"/>
+      <path d="M46 70c13-18 28-30 45-38" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/></g>
+  <text x="180" y="183" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Larkmere</text>
+  <text x="180" y="218" text-anchor="middle" fill="#B09A69" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2.8">GARDEN APARTMENTS</text>
+</svg>

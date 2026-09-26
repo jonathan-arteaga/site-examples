@@ -1,0 +1,44 @@
+name: Verify portfolio
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: portfolio-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      PORTFOLIO_ORIGIN: ${{ vars.PORTFOLIO_ORIGIN || 'https://website-examples-alpha.vercel.app' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+      - uses: actions/cache@v4
+        with:
+          path: |
+            .turbo
+            apps/hearthmere-residential/public/_responsive
+          key: portfolio-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
+          restore-keys: portfolio-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm verify
+      - run: pnpm audit --audit-level=high --prod
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-verification
+          path: |
+            test-results
+            playwright-report
+          retention-days: 7

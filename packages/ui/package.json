@@ -1,0 +1,34 @@
+{
+  "name": "@hearthmere/ui",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./icons": "./src/icons/index.tsx",
+    "./property-icons": "./src/icons/property.tsx",
+    "./toast": "./src/contexts/ToastContext.tsx"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
+    "@radix-ui/react-slot": "^1.3.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-hook-form": "^7.81.0",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
+  },
+  "peerDependencies": {
+    "@hearthmere/config": "workspace:*",
+    "@hearthmere/utils": "workspace:*",
+    "next": "^16.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

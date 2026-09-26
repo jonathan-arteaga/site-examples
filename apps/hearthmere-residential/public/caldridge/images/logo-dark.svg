@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="280" viewBox="0 0 360 280" role="img" aria-label="Caldridge Townhomes">
+  <g transform="translate(120 20)">
+    <path d="M96 32c-9-10-21-15-36-15-27 0-46 19-46 43s19 43 46 43c15 0 27-5 36-15" fill="none" stroke="#96523B" stroke-width="11" stroke-linecap="round"/>
+    <path d="m34 49 26-22 26 22M45 45v33h30V45" fill="none" stroke="#C58A61" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="180" y="183" text-anchor="middle" fill="#403A37" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Caldridge</text>
+  <text x="180" y="218" text-anchor="middle" fill="#96523B" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2.8">TOWNHOME LIVING</text>
+</svg>

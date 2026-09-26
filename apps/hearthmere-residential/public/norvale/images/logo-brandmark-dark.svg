@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 120 120" role="img" aria-label="Norvale Commons brand mark">
+  <rect width="120" height="120" rx="24" fill="#FFFFFF"/>
+
+      <rect x="15" y="15" width="90" height="90" rx="18" fill="none" stroke="#3F3838" stroke-width="8"/>
+      <path d="M34 88V32l52 56V32" fill="none" stroke="#3F3838" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 101h56" stroke="#B88A67" stroke-width="7" stroke-linecap="round"/>
+</svg>

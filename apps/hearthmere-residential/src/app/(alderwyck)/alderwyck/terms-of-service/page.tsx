@@ -1,0 +1,24 @@
+import { Metadata } from 'next';
+import { PropertyTermsOfServicePage } from '@hearthmere/ui';
+import { propertyConfig } from '@alderwyck/config/property';
+import { legalConfig } from '@alderwyck/config/legal';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description: `Portfolio demonstration notices for the fictional ${propertyConfig.name} website.`,
+  alternates: { canonical: '/alderwyck/terms-of-service' },
+};
+
+export default function TermsOfServicePage() {
+  return (
+    <PropertyTermsOfServicePage
+      propertyName={propertyConfig.name}
+      effectiveDate={legalConfig.termsOfService.effectiveDate}
+      fairHousingDisclaimer={legalConfig.fairHousing.disclaimer}
+      governingLaw={legalConfig.termsOfService.governingLaw}
+      jurisdiction={legalConfig.termsOfService.jurisdiction}
+      address={propertyConfig.address}
+      contact={propertyConfig.contact}
+    />
+  );
+}

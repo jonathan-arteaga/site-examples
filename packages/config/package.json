@@ -1,0 +1,16 @@
+{
+  "name": "@hearthmere/config",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types/index.ts",
+    "./image-policy": "./src/image-policy.ts",
+    "./next-image": "./src/next-image.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
