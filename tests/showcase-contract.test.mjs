@@ -172,7 +172,7 @@ test('the workspace has one deployed app containing five locked identities', () 
   assert.equal(rootPackage.name, 'site-examples');
   assert.equal(rootPackage.private, true);
   assert.equal(rootPackage.packageManager, 'pnpm@11.9.0');
-  assert.equal(rootPackage.engines.node, '>=22');
+  assert.equal(rootPackage.engines.node, '>=24 <25');
   assert.equal(existsSync(path.join(ROOT, 'LICENSE')), true);
 
   const appPackage = JSON.parse(read(`${deployedAppRoot}/package.json`));
