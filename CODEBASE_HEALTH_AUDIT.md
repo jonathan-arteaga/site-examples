@@ -45,7 +45,12 @@ Node 24.21.0 and pinned pnpm 11.9.0 were used. The full verification gate includ
 | Check | Result |
 | --- | --- |
 | `pnpm install` | Passed |
+| `pnpm verify` | Passed |
 | `pnpm peers check` | Passed |
+| `pnpm audit --prod --json` | Passed |
+| `pnpm audit --json` | 18 development-tool alerts; zero critical |
+
+The public `main` branch has no branch protection or rulesets configured; CI is not an enforced merge requirement.
 
 ## Open questions and coverage gaps
 
