@@ -4,6 +4,10 @@ A public collection of fictional website and interface prototypes. **Stage:** pu
 
 ![Site examples gallery](docs/images/portfolio.webp)
 
+## Browse the examples
+
+[Open the live gallery](https://site-examples-ebon.vercel.app/) to explore the designs without installing anything. The companies and sample interactions are fictional. The sections below explain the source and local development setup.
+
 ## What is here
 
 - `apps/gallery/`: the index and screenshots.
@@ -14,11 +18,11 @@ A public collection of fictional website and interface prototypes. **Stage:** pu
 
 The gallery is indexable; the demos are marked noindex. Names, properties, operating details, and sample interactions are fictional. Forms demonstrate a flow and do not send or retain information.
 
-[Open the live gallery](https://site-examples-ebon.vercel.app/). The concepts are under `/examples/property-management/` and `/examples/practice-studio/`.
+The concepts are under `/examples/property-management/` and `/examples/practice-studio/`.
 
 ## Run and check
 
-Use Node.js 22 or newer and pnpm 11.9.0 from the repository root:
+Use Node.js 24 and pnpm 11.9.0 from the repository root:
 
 ```sh
 pnpm install --frozen-lockfile
@@ -31,9 +35,13 @@ Open <http://127.0.0.1:3000>. `pnpm build` assembles `.vercel/output` using the 
 ```sh
 pnpm exec playwright install chromium
 pnpm verify
+pnpm audit --prod
+pnpm audit
 ```
 
 `verify` runs lint, type checks, the static build, image and privacy audits, contracts, Practice Studio packaging, and browser tests. `pnpm dev` serves the gallery at port 3001; `pnpm dev:hearthmere-residential` and `pnpm dev:practice-studio` run the apps separately. See [deployment](docs/deployment.md) for the build contract and [adding an example](docs/adding-examples.md) for new workspaces.
+
+[The maintenance review](CODEBASE_HEALTH_AUDIT.md) records dependency results, runtime alignment, and any remaining tooling alerts.
 
 ## Ownership and license
 
