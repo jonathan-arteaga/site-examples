@@ -24,3 +24,4 @@ jobs:
           cache: "pnpm"
       - run: pnpm install --frozen-lockfile
       - run: pnpm audit --audit-level=high --prod
+      - run: node scripts/audit-dependencies.mjs

@@ -34,6 +34,7 @@ jobs:
       - run: pnpm exec playwright install --with-deps chromium
       - run: pnpm verify
       - run: pnpm audit --audit-level=high --prod
+      - run: node scripts/audit-dependencies.mjs
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
