@@ -4,7 +4,7 @@ The repository builds a Vercel Build Output API v3 artifact under `.vercel/outpu
 
 ## Build and release
 
-Run `pnpm verify` on the exact commit. The `site-examples` Vercel project in Jonathan's personal team is connected to `jonathan-arteaga/site-examples`, uses the repository root, and runs `pnpm build` with the Other preset. Vercel consumes the generated `.vercel/output` artifact. Production tracks `main`. Read back each deployed SHA, routes, headers, image assets, and anonymous browser behavior before treating a new revision as live.
+Run `pnpm verify` on the exact commit. The `site-examples` Vercel project in Jonathan's personal team is connected to `jonathan-arteaga/site-examples`, uses the repository root, and runs `pnpm build` with the Other preset. Vercel consumes the generated `.vercel/output` artifact. This Git integration does not require the Vercel CLI in repository dependencies; CLI access for manual platform administration is separate. Production tracks `main`. Read back each deployed SHA, routes, headers, image assets, and anonymous browser behavior before treating a new revision as live.
 
 `PORTFOLIO_ORIGIN` is the canonical HTTPS origin used by the gallery and demos. Its default is the verified [production domain](https://site-examples-ebon.vercel.app/). Set it explicitly for another environment; do not carry over project IDs or tokens from the old repository. The GitHub workflow runs source and browser verification without a Vercel token. If Vercel uses a deployment check, point it at the new repository's passing `verify` job.
 
