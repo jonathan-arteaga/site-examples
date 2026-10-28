@@ -16,11 +16,11 @@
     "@hearthmere/ui": "workspace:*",
     "@hearthmere/utils": "workspace:*",
     "@hookform/resolvers": "^5.4.0",
-    "next": "16.3.8",
+    "next": "16.4.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "react-hook-form": "^7.81.0",
-    "zod": "^4.4.3"
+    "zod": "4.6.6"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.11",
@@ -29,7 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.3.8",
+    "eslint-config-next": "16.4.1",
     "tailwindcss": "^4.3.2",
     "typescript": "^5"
   }
