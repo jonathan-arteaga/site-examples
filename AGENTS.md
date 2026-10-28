@@ -10,3 +10,9 @@ This is a public collection of fictional static websites. Preserve each app's di
 - Use focused branches and PRs for substantive work. Record actual checks; do not infer a live deployment from a local build.
 
 `apps/hearthmere-residential/AGENTS.md` holds the fictional property's locked data. `apps/practice-studio/AGENTS.md` holds its local-only form and standalone packaging rules.
+
+## Setup and browser boundary
+
+Use Node 24 (`.nvmrc`) and the pnpm version in `package.json`, then `pnpm install --frozen-lockfile`. Read any nested AGENTS.md for the app being edited; its local rules supplement this file.
+
+`pnpm verify` includes a separate Playwright Chromium suite. Personal browser work uses the in-app Browser; ask before switching to that suite's browser. If it is not run, report the individual non-browser checks and in-app walkthrough separately rather than calling the full gate passed.

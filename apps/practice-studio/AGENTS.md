@@ -6,4 +6,4 @@ This app is a fictional practice-launch and systems-consulting prototype inside 
 - Do not add clinical, legal, credentialing, timeline, revenue, or patient-outcome guarantees.
 - Keep the combined route at `/examples/practice-studio/`. The root build mounts its static output there.
 - Preserve the standalone Sites packaging files (`.openai/hosting.json`, `worker/`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs`) for an optional separate handoff; that path is not this gallery's Vercel deployment.
-- Run the root build, the Practice Studio packaging test, and relevant browser checks after changes. Use the root README for current repository ownership and preview status.
+- From the repository root, run `pnpm build` and `pnpm --filter practice-studio test:sites`, then inspect affected pages in the in-app Browser. Use the root README for current repository ownership and preview status.
