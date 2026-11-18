@@ -24,7 +24,7 @@
   "peerDependencies": {
     "@hearthmere/config": "workspace:*",
     "@hearthmere/utils": "workspace:*",
-    "next": "^16.4.1"
+    "next": "^16.4.5"
   },
   "devDependencies": {
     "@types/react": "^19",
