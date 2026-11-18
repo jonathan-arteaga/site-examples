@@ -29,6 +29,10 @@ overrides:
   zod@>=4 <4.6.6: 4.6.6
   fast-uri@>=3 <3.1.9: 3.1.9
 
+patchedDependencies:
+  picomatch@2.3.2: 80a886323fd5288a1b14b1068b177d94fd1f29e5a5516f21930e48a084c998fa
+  picomatch@4.0.7: 912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853
+
 importers:
 
   .:
@@ -4494,9 +4498,9 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  fdir@6.5.0(picomatch@4.0.7):
+  fdir@6.5.0(picomatch@4.0.7(patch_hash=912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853)):
     optionalDependencies:
-      picomatch: 4.0.7
+      picomatch: 4.0.7(patch_hash=912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853)
 
   file-entry-cache@8.0.0:
     dependencies:
@@ -4934,7 +4938,7 @@ snapshots:
     dependencies:
       commander: 14.0.3
       listr2: 9.0.5
-      picomatch: 4.0.7
+      picomatch: 4.0.7(patch_hash=912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853)
       string-argv: 0.3.2
       tinyexec: 1.3.1
       yaml: 2.8.3
@@ -4977,7 +4981,7 @@ snapshots:
   micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
-      picomatch: 2.3.2
+      picomatch: 2.3.2(patch_hash=80a886323fd5288a1b14b1068b177d94fd1f29e5a5516f21930e48a084c998fa)
 
   mimic-function@5.0.1: {}
 
@@ -5127,9 +5131,9 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  picomatch@2.3.2: {}
+  picomatch@2.3.2(patch_hash=80a886323fd5288a1b14b1068b177d94fd1f29e5a5516f21930e48a084c998fa): {}
 
-  picomatch@4.0.7: {}
+  picomatch@4.0.7(patch_hash=912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853): {}
 
   playwright-core@1.62.0: {}
 
@@ -5480,8 +5484,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.7)
-      picomatch: 4.0.7
+      fdir: 6.5.0(picomatch@4.0.7(patch_hash=912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853))
+      picomatch: 4.0.7(patch_hash=912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853)
 
   to-regex-range@5.0.1:
     dependencies:
@@ -5616,7 +5620,7 @@ snapshots:
   vite@8.3.4(@types/node@25.9.9)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.8.3):
     dependencies:
       lightningcss: 1.33.0
-      picomatch: 4.0.7
+      picomatch: 4.0.7(patch_hash=912b865f333b48d0691a90cc1ebb065282417db3e09e4ba5543f8789d4a36853)
       postcss: 8.5.29
       rolldown: 1.2.13
       tinyglobby: 0.2.17

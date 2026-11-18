@@ -36,3 +36,8 @@ overrides:
   "@fastify/busboy@>=3 <3.2.2": "3.2.2"
   "zod@>=4 <4.6.6": "4.6.6"
   "fast-uri@>=3 <3.1.9": "3.1.9"
+
+# Remove these patches when both tooling dependency paths resolve to an upstream fix.
+patchedDependencies:
+  picomatch@2.3.2: patches/picomatch@2.3.2.patch
+  picomatch@4.0.7: patches/picomatch@4.0.7.patch
